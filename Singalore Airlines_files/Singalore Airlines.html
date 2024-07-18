@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/VIGNESHRAJA%20S/OneDrive/Desktop/p/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singalore Airlines</title>
+    <link rel="stylesheet" href="./Singalore Airlines_files/style.css">
+    <script src="file:///C:/Users/VIGNESHRAJA%20S/OneDrive/Desktop/p/script.js"></script>
+    
+</head>
+<body background="./Singalore Airlines_files/images.jpg">
+    <br>
+    <br>
+<br>
+<br>
+<br>
+
+    <div class="modal-body">
+        <center>
+            <h1>Enter your travel plan details:</h1>
+            <br>
+            <br>
+            <br>
+	          	<label for="From">From:</label>
+	            <input type="text" name="from" placeholder="" id="from" onclick="getFrom()">
+                <label for="to">To:</label>
+	            <input type="text" name="to" placeholder="" id="to" onclick="getTo()">
+	            <label for="DepartureTime">Date of Travel</label>
+	            <input type="date" name="DepartureTime" id="tDate" onclick="getTravel()">
+	            <label for="DepartureTime">Return Date:</label>
+	            <input type="date" name="DepartureTime" id="rDate" onclick="getReturn()">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">One-Way</label>
+                
+                <br>
+                <br>
+                <label for="Adults">Adults:</label>
+	            <input type="text" name="Adults" placeholder="" id="Adults" onclick="getAdults()">
+                <label for="Children">Children:</label>
+	            <input type="text" name="Children" placeholder="" id="Children" onclick="getChildren()">
+                <label for="email">Email ID:</label>
+                <input type="to" name="emailid" placeholder="" id="email" onclick="getEmail()">
+                
+               <button onclick="mySubmit()">Submit</button>
+               <h4 id="message1">From:</h4>
+               <h4 id="message2"></h4>
+               <h4 id="message3"></h4>
+               <h4 id="message4"></h4>
+               <h4 id="message5"></h4>
+               <h4 id="message6"></h4>
+               <h4 id="message7"></h4>
+               <br>
+                <br>
+               <h3>Check the details before Submitting</h3>
+                <br>
+                <br>
+                <br>
+                <br>
+	        </center></div>
+	 
+    <marquee direction="scroll">
+    <h3 style="color:black">Look out for our special discount schemes</h3></marquee>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h2>SINGAPORE AIRLINE</h2>
+                <p>This is the best and populat platform to explore <br>your favourite cities in singapore</p>
+            </div>
+            <div class="footer-col">
+                <h2>SUPPORT</h2>
+                <a href="https://www.airindia.com/">contact us</a>
+                <br>
+                <br>
+                <a href="https://www.goindigo.in/">WhatsApp</a>
+            </div>
+            <div class="footer-col">
+                <h2>USEFUL LINKS</h2>
+                <a href="https://www.ixigo.com/">Pricing</a>
+                <br>
+                <br>
+                <a href="https://airsewa.gov.in/">Settings</a>
+            </div>
+            <div class="footer-col">
+                <h2>CONTACT</h2>
+                <p>Singapore 0003 7777</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<br>
+<br>
+<br>
+<script>
+    function getFrom()
+    {
+        let userfrom=document.querySelector("#from");
+        let message=document.querySelector("#message1");
+        message.innerHTML="From:"+ userfrom.value
+        console.log(userfrom.value)
+    }
+    function getTo()
+    {
+        let userto=document.querySelector("#to");
+        let message2=document.querySelector("#message2");
+        message2.innerHTML="To:"+ userto.value
+        console.log(userto.value)
+    }
+    function getTravel()
+    {
+        let usertravel=document.querySelector("#tDate");
+        let message3=document.querySelector("#message3");
+        message3.innerHTML="Date of Travel:"+ usertravel.value
+        console.log(usertravel.value)
+    }
+    function getReturn()
+    {
+        let userreturn=document.querySelector("#rDate");
+        let message4=document.querySelector("#message4");
+        message4.innerHTML="Date of Return:"+ userreturn.value
+        console.log(userreturn.value)
+    }
+    function getAdults()
+    {
+        let useradults=document.querySelector("#Adults");
+        let message5=document.querySelector("#message5");
+        message5.innerHTML="No of Adults:"+ useradults.value
+        console.log(useradults.value)
+    }
+    function getChildren()
+    {
+        let userchildren=document.querySelector("#Children");
+        let message6=document.querySelector("#message6");
+        message6.innerHTML="No of Children:"+ userchildren.value
+        console.log(userchildren.value)
+    }
+    function getEmail()
+    {
+        let useremail=document.querySelector("#email");
+        let message7=document.querySelector("#message7");
+        message7.innerHTML="Email:"+ useremail.value
+        console.log(useremail.value)
+    }
+    function mySubmit()
+    {
+        alert("Your ticket is booked .Thank you for chossing Singapore Airlines.Please Check your email id for a ticket " )
+    }
+
+
+</script>
+
+        
+
+
+</body></html>
